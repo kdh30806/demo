@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:DEMO
+    username: hyuni	
+    password: 1234
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+#        show_sql: true
+        default_batch_fetch_size : 100
+        format_sql : true
+
+logging.level:
+  org.hibernate.SQL: debug
+  org.hibernate.type: trace
