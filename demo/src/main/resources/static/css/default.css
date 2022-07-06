@@ -1,4 +1,4 @@
-body, ul, a{
+body, ul, a, button{
 	margin: 0;
 	padding: 0;
 	color: black;
@@ -10,10 +10,14 @@ li {
 	list-style: none;
 }
 
-li:hover, a:hover{
+li:hover, a:hover, button:hover{
 	cursor: pointer;
 }
 
 a {
 	text-decoration: none;
+}
+
+span {
+	display: inline-block;
 }
